@@ -23,3 +23,10 @@ i have already installed mangodb and compass and created a cluster as well as in
 Import the model in index.js
 ```jsx 
 const { UserModel, TodoModel } = require("./db");```
+
+```
+
+Succcesssfullll : - ![alt text](image-1.png)
+
+
+--Implement the auth middleware (in a new file auth.js)
