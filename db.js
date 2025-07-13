@@ -14,12 +14,11 @@ const ObjectId = Schema.ObjectId;
 const User = new Schema ({
     name : String,
     Password : String,
-    username : String
+    email : {type : String, unique : true}
 });
 
 const Todo = new Schema({
     description : String,
-     name : String,
     userid : ObjectId,
     done : Boolean
 
@@ -27,3 +26,8 @@ const Todo = new Schema({
 
 const UserModel = mongoose.model ('users', User) ;
 const TodoModel = mongoose.model('todos', Todo);
+
+module.exports = {
+    UserModel : UserModel,
+    TodoModel : TodoModel
+}

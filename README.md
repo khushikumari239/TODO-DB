@@ -19,3 +19,7 @@ https://www.npmjs.com/package/mongoose
 i have already installed mangodb and compass and created a cluster as well as inserted the document in it ... a todo whre i ahve user and todos database i gonna use it in db.js file 
 ![alt text](image.png)
 ![alt text](<Screenshot 2025-07-13 102842.png>)
+
+Import the model in index.js
+```jsx 
+const { UserModel, TodoModel } = require("./db");```
